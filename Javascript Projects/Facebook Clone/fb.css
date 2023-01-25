@@ -1,0 +1,518 @@
+/* main section background color  #F0F2F5 */
+
+/* ============GOOGLE FONTS============ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ----------bgs and font colors-------------- */
+  --html-background: #fff;
+  --main-bgcolor: #f0f2f5;
+  --nav-color1: #606266;
+  --bg-hover: #d8dadf;
+  --nav-color2: #050505;
+  /* --nav-icon-name-color:; */
+
+  /* -font sizes------ */
+  --nav-fontsize: 2.5rem;
+  --navmiddle-fontsize: 3.5rem;
+
+  /* ---------transitions---------- */
+  --trans-4: 0.4s ease;
+  --trans-1: 0.1s ease;
+  --trans-2: 0.2s ease;
+
+  /* ----------cursors------------ */
+  --cursor-p: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--html-background);
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+}
+
+/* -----------------------------------------------styling the nav bar-------------------------------------------------- */
+#navbar {
+  width: 100vw;
+  top: 0;
+  position: relative;
+  height: 4rem;
+  /* background-color: aqua; */
+  /* padding: 0.9rem 0; */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  /* flex-basis: 1 3 1; */
+  justify-content: flex-start;
+}
+
+/* ----------------styling the left div----------- */
+.left {
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+  justify-content: flex-start;
+  padding-left: 1.3rem;
+  /* margin-top: -1.3%; */
+  height: 100%;
+  width: 15%;
+  /* background-color: blue; */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--nav-fontsize);
+  width: var(--nav-fontsize);
+}
+
+/* ---------------now styling the middle one------------------ */
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 1.3rem;
+  /* margin-top: -1.3%; */
+  cursor: var(--cursor-p);
+  /* position: absolute; */
+  height: 100%;
+  /* background-color: red; */
+  width: 65%;
+}
+
+.middle > div {
+  width: 15%;
+  /* margin-left: 20px; */
+  /* background-color: aquamarine; */
+  height: 80%;
+  /* text-align: center; */
+  display: flex;
+  position: relative;
+  /* margin: auto; */
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  transition: var(--trans-2);
+  /* padding: 1%; */
+  /* background-color: #0b86ee; */
+  /* line-height: 80%; */
+  /* margin: 10px; */
+}
+
+.hover-class {
+  position: absolute;
+  bottom: -55px;
+  display: none;
+  text-align: center;
+  /* border: inset; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  line-height: 40px;
+  font-size: small;
+  left: 0;
+  height: 40px;
+  color: #fff;
+  text-transform: capitalize;
+  /* letter-spacing: 1.5px; */
+  background-color: var(--nav-color1);
+  transition: all 0.3s;
+  /* background-color: red; */
+  width: 80%;
+  left: 10%;
+}
+
+.active-middle-div {
+  display: block;
+}
+
+.middle > div:hover {
+  background-color: var(--main-bgcolor);
+}
+
+.middle > div::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  /* display: none; */
+  height: 2px;
+  bottom: 0;
+  left: 0%;
+  transition: var(--trans-4);
+  background-color: var(--nav-color1);
+}
+
+.middle > div:hover::before {
+  width: 100%;
+}
+
+.active {
+  color: #0b86ee;
+}
+
+.middle > i {
+  font-size: var(--navmiddle-fontsize);
+  color: var(--nav-color1);
+}
+
+/* ----------------now to style the right one------------ */
+.right {
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+  cursor: var(--cursor-p);
+  justify-content: space-evenly;
+  /* padding-left: 1.3rem; */
+  /* margin-top: -1.3%; */
+  height: 100%;
+  width: 20%;
+  /* background-color: yellow; */
+}
+
+.right > div {
+  width: 20%;
+  height: 75%;
+  background-color: var(--main-bgcolor);
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: space-evenly;
+  transition: var(--trans-2);
+}
+
+.right > div:hover {
+  background-color: var(--bg-hover);
+}
+
+/* ===================styling right's content for that enables after the occurance of event listner=========== */
+.menu {
+  position: relative;
+}
+
+
+.active-icon
+{
+    color: #1770E6;
+    /* background-color: #dbe7f2; */
+}
+
+
+
+
+.menu-content {
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  border-radius: 20px;
+  width: 300px;
+  background-color: var(--main-bgcolor);
+  height: 500px;
+}
+
+.heading {
+  width: 80%;
+  margin-top: 10px;
+  height: 13%;
+  padding-top: 10px;
+  /* background-color: yellow; */
+}
+
+.create {
+  width: 80%;
+  padding: 15px 25px;
+  background-color: var(--html-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+  border-radius: 15px;
+  /* background-color: purple; */
+  margin-bottom: 15px;
+}
+
+.create > div
+{
+    width: 100%;
+    /* background-color: red; */
+    height: 15%;
+
+
+}
+
+.ul-item
+{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: transparent;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.ul-item:hover
+{
+    background-color: var(--main-bgcolor);
+}
+
+
+
+.ul-icon
+{
+    width: 22%;
+    height: 78%;
+    font-size: 10px;
+    padding-top: 0.6rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #f0f2f5;
+}
+
+.ul-icon:hover
+{
+    background-color: var(--bg-hover);
+}
+
+
+
+.ul-para
+{
+    width: 40%;
+    margin-left: 8px;
+    padding: 10px 0;
+    /* background-color: #f0f2f5; */
+    text-align: center;
+}
+
+.messenger
+{
+    position: relative;
+}
+
+.wrapper
+{
+    position: absolute;
+    top: 70px;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    justify-content: space-around;
+    flex-direction: column;
+    right: -90px;
+    width: 350px;
+    border-radius: 15px;
+    height: 500px;
+    /* height: fit-content; */
+    gap: 1%;
+    /* background-color: red; */
+
+}
+
+.wrapper > div
+{
+    width: 90%;
+    /* background-color: yellow; */
+    height: 15%;
+}
+
+.head-icons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 1 3;
+}
+
+.icons
+{
+    margin: 5px 10px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+.icons i 
+{
+    width: 100%;
+    border-radius: 50%;
+    /* background-color: white; */
+    height: 75%;
+    background-color: var(--main-bgcolor);
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons i:hover{
+    background-color: var(--bg-hover);
+}
+
+.search-message
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+.search-message input{
+    width: 90%;
+    height: 60%;
+    border-radius: 12px;
+    padding-left: 15px;
+    border: none;
+    background-color: var(--main-bgcolor);
+    outline: none;
+}
+
+.search-message i
+{
+    position: absolute;
+    top: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+}
+
+.search-message i:hover
+{
+    background-color: #fff;
+}
+
+.chat
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chat:hover
+{
+    background-color: var(--bg-hover);
+}
+
+
+
+
+
+.chat-icon
+{
+    font-size: 30px;
+    margin-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 50%; */
+    /* background-color: #050505; */
+}
+
+
+.chat-info
+{
+    width: 70%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+    flex-direction: column;
+}
+
+.name
+{
+    font-size: 18px;
+}
+
+.chats
+{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------styling the icons-------------------- */
+.fa-facebook {
+  font-size: var(--nav-fontsize);
+  color: #0b86ee;
+  margin-right: 1.5rem;
+}
+
+.searchicon {
+  font-size: var(--nav-fontsize);
+  color: var(--nav-color1);
+  background-color: var(--main-bgcolor);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: var(--cursor-p);
+  padding-top: 22%;
+  border-radius: 50%;
+}
+
+.icons-para {
+  color: var(--nav-headings);
+  font-size: 20px;
+  font-weight: 900;
+  height: 75%;
+  width: 85%;
+  border-radius: 50%;
+  background-color: var(--main-bgcolor);
+  text-align: center;
+  padding-top: 0.8rem;
+}

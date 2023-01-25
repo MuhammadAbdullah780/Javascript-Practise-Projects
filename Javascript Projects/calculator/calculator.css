@@ -1,0 +1,103 @@
+
+/* ========= INITIALS =========== */
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ======== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+
+/* ======= STYLING THE BUTTON ====== */
+button {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: #efefef;
+    border: none;
+    border-radius: 50%;
+    color: #444;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+                -6px -6px 10px rgba(255, 255, 255, .5),
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+button:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+                -2px -2px 4px rgba(255, 255, 255, .4),
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+button:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+                inset -2px -2px 4px rgba(255, 255, 255, .5),
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+
+/* ======= DISPLAY SCREEN STYLE ========= */
+.output{
+    width: 100%;
+    /* height: 1.5rem; */
+}
+
+.output input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    /* margin-bottom: 2rem; */
+    border: none;
+    font-weight: 600;
+    outline: none;
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+    inset -2px -2px 4px rgba(255, 255, 255, .5),
+    inset 2px 2px 2px rgba(255, 255, 255, .075),
+    inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+
+/* ======== BUTTON DIV STYLING ======== */
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+/* ======== MAIN CONTAINER ====== */
+.container{
+
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: max-content;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #efefef;
+    box-shadow: -7px -7px 9px rgba(255, 255, 255, .6),
+                -6px -6px 8px rgba(255, 255, 255, .4),
+                6px 6px 7px rgba(255, 255, 255, .05),
+                6px 6px 7px rgba(0, 0, 0, .1);
+} 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hex.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Colorflipper</div>
+        <div class="hex">Hex</div>
+    </nav>
+    <main class="main">
+        <div class="container">
+            <div class="upper">
+                <p>Background color: <br> <strong id="color">#D2D2De</strong></p>
+            </div>
+            <div class="lower">
+                <button id="btn"> Click Me </button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+        const btn = document.getElementById('btn');
+        const color = document.getElementById("color");
+
+        btn.addEventListener('click', ()=>{
+            let hexcolor = '#';
+           for (let i=0 ;i<6 ;i++ ) {
+               hexcolor += hex[Getrandomnumber()];
+           };
+           color.innerText = hexcolor;
+           document.body.style.backgroundColor = hexcolor;
+        });
+
+        function Getrandomnumber() {
+            return Math.floor(Math.random() * hex.length);
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

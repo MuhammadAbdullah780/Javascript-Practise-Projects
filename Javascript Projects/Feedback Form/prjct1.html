@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="prjct1.css" />
+    <script
+      src="https://kit.fontawesome.com/cf1520474a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="main">
+      <div class="box">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="para" id="para">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us to improve our offering!
+          </p>
+        </div>
+        <div class="numbers" id="numbers">
+          <span class="span" onclick="color()" >1</span>
+          <span class="span" onclick="color()" >2</span>
+          <span class="span" onclick="color()" >3</span>
+          <span class="span" onclick="color()" >4</span>
+          <span class="span" onclick="color()" >5</span>
+        </div>
+        <div class="submit">
+          <button id="submit" class="button" onclick="hide()" >Submit</button>
+        </div>
+      </div>
+      <div class="container2" id="box2" >
+        <div class="headings">
+          <h4>You selected 4 out of 5</h4>
+          <h2>Thank You</h2>
+        </div>
+        <div class="paragraph">
+          We apppreciate you taking the time to give a rating. if you ever need
+          more support. Dont hesitate to get in touch!
+        </div>
+      </div>
+    </div>
+    <script>
+      let container1 = document.querySelector('.box');
+      // console.log(container1);
+      let container2 = document.getElementById('box2');
+      // console.log(container2);
+
+      let btn = document.getElementById('submit');
+      btn.addEventListener('click', function hide(){
+        container1.style.display = 'none';
+        if (container2.style.display = 'none'){
+          container2.style.display = 'block';
+        }       
+      })
+
+      let numbers = document.querySelectorAll('.span');
+      span.addEventListener( 'click' , function color(){
+        numbers.classlist.add('.bgcolor');
+      })
+    </script>
+  </body>
+</html>

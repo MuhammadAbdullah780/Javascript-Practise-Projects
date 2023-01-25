@@ -1,0 +1,67 @@
+/* #a1acff */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:ital,wght@1,300&family=Roboto&family=Roboto+Slab&display=swap");
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif */
+
+
+*
+{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.whole
+{
+    background-color: #a1acff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #404040;
+    height: 400px;
+    width: 700px;
+
+}
+
+
+.left-box , .right-box
+{
+    display: block;
+    margin: auto;
+    height: 80%;
+    width: 40%;
+    background-color: aliceblue;
+}
+
+.left-content
+{
+    height: 100%;
+    width: 85%;
+    text-align: flex-start;
+    /* background-color: blue; */
+    padding-top: 15%;
+    display: block;
+    margin: auto;
+}
+
+.left-content h1
+{
+    font-size: 30px;
+    font-weight: 900;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}

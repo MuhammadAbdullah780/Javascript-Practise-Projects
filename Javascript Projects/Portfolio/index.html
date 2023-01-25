@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ====== META TAGS ========== -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio Websites" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Muhammad Abdullah" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===========LINKING CSS============ -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- ============FONT AWSOME LINK=========== -->
+    <script
+      src="https://kit.fontawesome.com/cf1520474a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Muhammad Abdullah</title>
+    <link rel="icon" href="./images/me.jpg" />
+  </head>
+  <body class="light-mode">
+    <!-- ========================= PRE-LOADER HTML ======================= -->
+    <div class="loader-container flex f-center" id="load-container">
+      <div class="spinner" id="preloader">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+      </div>
+    </div>
+    <!-- ========== HEADER =========== -->
+    <header>
+      <!-- ======================= S E C - N O - 1 ================================== -->
+      <section class="section sec-1 flex f-row active-sec f-center" id="home">
+        <div class="sec-1-left image-sec flex f-center">
+          <img src="./images/me.jpg" alt="#" class="secimg" />
+          <div class="img-bg"></div>
+        </div>
+        <div class="sec-1-right flex f-col sec-1-content">
+          <h1>
+            Hi, I'm <br />
+            <span class="color-text">Muhammad Abdullah</span> <br />
+            A Web Developer.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            consequuntur in obcaecati itaque iusto, corrupti ipsam alias facilis
+            quidem nobis doloremque architecto mollitia, repellendus cumque sint
+            modi doloribus, cupiditate illo!
+          </p>
+          <div class="cv-btn flex f-center">
+            <button class="btn">Download CV</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- =========== MAIN ============== -->
+    <main>
+      <!-- ========================= S E C - N O - 2 ======================= -->
+      <section class="sec-2 section flex f-col" id="about">
+        <h2>ABOUT <span class="color-text">ME</span></h2>
+        <!-- ------------ INFORMATION SECTION -------- -->
+        <div class="whole info-box flex f-col">
+          <div class="information flex f-col">
+            <h3>INFORMATION ABOUT ME</h3>
+            <p class="info-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              labore nihil obcaecati consequatur. Debitis error doloremque, vero
+              eos vel nemo eius voluptatem dicta tenetur modiLa musica delectus
+              dolore fugiat exercitationem a, ipsum quidemquo enim natus
+              accusamus labore dolores nam. Unde. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Harum non necessitatibus deleniti
+              eum soluta.
+            </p>
+            <div class="cv-btn flex f-center">
+              <a href="tel:+923353975358"
+                ><button class="btn">Contact Me</button></a
+              >
+            </div>
+            <div class="cv-btn flex f-center">
+              <a href="mailto:ma0401431@gmail.com"
+                ><button class="btn">Mail Me</button></a
+              >
+            </div>
+          </div>
+          <div class="about-boxes flex f-row f-center">
+            <div class="about-box flex f-col box-1">
+              <p class="large-text">650+</p>
+              <p class="small-text">
+                Projects <br />
+                Completed
+              </p>
+            </div>
+            <div class="about-box flex f-col box-2">
+              <p class="large-text">10+</p>
+              <p class="small-text">
+                Years Of <br />
+                Experience
+              </p>
+            </div>
+            <div class="about-box flex f-col box-3">
+              <p class="large-text">300+</p>
+              <p class="small-text">
+                Happy <br />
+                Clients
+              </p>
+            </div>
+            <div class="about-box flex f-col box-4">
+              <p class="large-text">400+</p>
+              <p class="small-text">
+                Customer <br />
+                Reviews
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <!-- ------------------- MY SKILLS DIVS CONTINUE --------------- -->
+        <div class="skills-section flex f-col" id="skills">
+          <h4>MY SKILLS</h4>
+          <div class="skills-sec flex f-row">
+            <!-- ----------- LEFT COLUMNS ------------ -->
+            <div class="left-column flex f-col">
+              <div class="column left-col-1 flex">
+                <div class="left-text">
+                  <h5>HTML-5</h5>
+                  <p class="progress">90%</p>
+                </div>
+                <div class="bar flex f-center">
+                  <span class="progress-bar"></span>
+                  <div class="s-before" id="html"></div>
+                </div>
+              </div>
+
+              <div class="column left-col-2 flex">
+                <div class="left-text">
+                  <h5>CSS-3</h5>
+                  <p class="progress">80%</p>
+                </div>
+                <div class="bar flex f-center">
+                  <span class="progress-bar"></span>
+                  <div class="s-before" id="css"></div>
+                </div>
+              </div>
+
+              <div class="column left-col-3 flex">
+                <div class="left-text">
+                  <h5>REACT JS</h5>
+                  <p class="progress">60%</p>
+                </div>
+                <div class="bar flex f-center">
+                  <span class="progress-bar"></span>
+                  <div class="s-before" id="react"></div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------ RIGHT COLUMNS -------- -->
+            <div class="right-column flex f-col">
+              <div class="column right-col-1 flex">
+                <div class="left-text">
+                  <h5>NODE JS</h5>
+                  <p class="progress">65%</p>
+                </div>
+                <div class="bar flex f-center">
+                  <span class="progress-bar"></span>
+                  <div class="s-before" id="node-js"></div>
+                </div>
+              </div>
+
+              <div class="column right-col-2 flex">
+                <div class="left-text">
+                  <h5>PYTHON</h5>
+                  <p class="progress">70%</p>
+                </div>
+                <div class="bar flex f-center">
+                  <span class="progress-bar"></span>
+                  <div class="s-before" id="python"></div>
+                </div>
+              </div>
+
+              <div class="column right-col-3 flex">
+                <div class="left-text">
+                  <h5>SAAS</h5>
+                  <p class="progress">80%</p>
+                </div>
+                <div class="bar flex f-center">
+                  <span class="progress-bar"></span>
+                  <div class="s-before" id="saas"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <!-- ================================= S E C - NO - 3 ========================= -->
+      <section class="sec-3 section flex f-col" id="portfolio">
+        <h2 class="port-h2">MY<span class="color-text">PORTFOLIO</span></h2>
+        <p class="port-para">
+          Here is some of my work that I've done in various programming
+          languages.
+        </p>
+        <!-- ------------- IMAGES SECTION STARTS ------------------ -->
+        <div class="images portfolios flex f-row">
+          <!-- --------------- 1ST COLUMN --------------------- -->
+          <div class="images-col-1 image-column flex f-col">
+            <!-- ------1ST ITEM ---------- -->
+            <div class="portfolio-item">
+              <img src="./images/port1.jpg" alt="#" />
+              <div class="hover-item flex f-center f-col">
+                <h4>Project Source</h4>
+                <div class="icons flex f-row f-center">
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-behance"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ------------ 2ND ITEM --------------- -->
+            <div class="portfolio-item">
+              <img src="./images/port2.jpg" alt="#" />
+              <div class="hover-item flex f-center f-col">
+                <h4>Project Source</h4>
+                <div class="icons flex f-row f-center">
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-behance"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+            <!-- --------------- 3RD ITEM ----------- -->
+            <div class="portfolio-item">
+              <img src="./images/port3.jpg" alt="#" />
+              <div class="hover-item flex f-center f-col">
+                <h4>Project Source</h4>
+                <div class="icons flex f-row f-center">
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-behance"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ---------- 2ND COLUMN ------------------ -->
+          <div class="image-col-2 image-column flex f-col">
+            <!-- -------------- 4TH ITEM ------------- -->
+            <div class="portfolio-item">
+              <img src="./images/port4.jpg" alt="#" />
+              <div class="hover-item flex f-center f-col">
+                <h4>Project Source</h4>
+                <div class="icons flex f-row f-center">
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-behance"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ----------- 5TH ITEM ------------------- -->
+            <div class="portfolio-item">
+              <img src="./images/port5.jpg" alt="#" />
+              <div class="hover-item flex f-center f-col">
+                <h4>Project Source</h4>
+                <div class="icons flex f-row f-center">
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-behance"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------ 6TH ITEM ---------------------- -->
+            <div class="portfolio-item">
+              <img src="./images/port6.jpg" alt="#" />
+              <div class="hover-item flex f-center f-col">
+                <h4>Project Source</h4>
+                <div class="icons flex f-row f-center">
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-behance"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <!-- ============================= S E C - N O - 4 ========================================= -->
+      <section class="sec-4 section flex f-col" id="blogs">
+        <h2>MY <span class="color-text">BLOGS</span></h2>
+        <!-- ------------ BLOGS DIV ------------------ -->
+        <div class="blog-list flex f-col">
+          <!-- ------------- ROW NO 1 --------------- -->
+          <div class="rows row-1 flex f-row f-center">
+            <!-- ---------- LEFT ROW ITEM --------------- -->
+            <div class="left-item">
+              <!-- ------------- ITEM ------------------ -->
+              <div class="item">
+                <div class="upper">
+                  <img src="./images/blog1.jpg" alt="#" />
+                </div>
+                <div class="lower">
+                  <h4>How to Create Your Own Website</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolbus natus voluptas, eos obcaecati recusandae amet?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------- RIGHT ROW ITEM ------------------ -->
+            <div class="right-item">
+              <!-- ------------- ITEM ------------------ -->
+              <div class="item">
+                <div class="upper">
+                  <img src="./images/blog2.jpg" alt="#" />
+                </div>
+                <div class="lower">
+                  <h4>How to Become an Expert in Web Design</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolbus natus voluptas, eos obcaecati recusandae amet?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ------------- ROW NO 2 --------------- -->
+          <div class="rows row-2 flex f-row f-center">
+            <!-- ---------- LEFT ROW ITEM --------------- -->
+            <div class="left-item">
+              <!-- ------------- ITEM ------------------ -->
+              <div class="item">
+                <div class="upper">
+                  <img src="./images/blog3.jpg" alt="#" />
+                </div>
+                <div class="lower">
+                  <h4>Become a Web Designer in 10 Days</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolbus natus voluptas, eos obcaecati recusandae amet?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------- RIGHT ROW ITEM ------------------ -->
+            <div class="right-item">
+              <!-- ------------- ITEM ------------------ -->
+              <div class="item">
+                <div class="upper">
+                  <img src="./images/port5.jpg" alt="#" />
+                </div>
+                <div class="lower">
+                  <h4>Debbuging made easy with Web Inspector</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolbus natus voluptas, eos obcaecati recusandae amet?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ------------- ROW NO 3 --------------- -->
+          <div class="rows row-3 flex f-row f-center">
+            <!-- ---------- LEFT ROW ITEM --------------- -->
+            <div class="left-item">
+              <!-- ------------- ITEM ------------------ -->
+              <div class="item">
+                <div class="upper">
+                  <img src="./images/port1.jpg" alt="#" />
+                </div>
+                <div class="lower">
+                  <h4>Get started with Web Design and UI Design</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolbus natus voluptas, eos obcaecati recusandae amet?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- ------- RIGHT ROW ITEM ------------------ -->
+            <div class="right-item">
+              <!-- ------------- ITEM ------------------ -->
+              <div class="item">
+                <div class="upper">
+                  <img src="./images/port3.jpg" alt="#" />
+                </div>
+                <div class="lower">
+                  <h4>This is what you need to know about Web Design</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolbus natus voluptas, eos obcaecati recusandae amet?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------- BLOG SECTION ENDS ------------ -->
+      </section>
+      <!-- ============================= S E C - N O - 5 ========================================= -->
+      <section class="sec-5 section flex f-col" id="contact">
+        <!-- --------- MAIN HEADING ------------------ -->
+        <h2>CONTACT <span class="color-text">ME</span></h2>
+        <!-- ----------- PERSON INFO ------------------  -->
+        <div class="contact-info flex f-col f-center">
+          <h3>CONTACT ME HERE</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, laborum
+            numquam? Quam excepturi perspiciatis quas quasi.
+          </p>
+          <div class="person-info flex f-center">
+            <!-- ---------- LEFT INFO BOX ------------------ -->
+            <div class="left-info flex f-center">
+              <!-- ---------- LEFT BOX LEFT CONTENT ------------- -->
+              <div class="contact-icons flex f-col f-center">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span><i class="fa-solid fa-graduation-cap"></i></span>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span><i class="fa-solid fa-earth-asia"></i></span>
+              </div>
+              <!-- -------------- LEFT BOX RIGHT CONTENT --------------- -->
+              <div class="content">
+                <span><p>Location</p></span>
+                <span><p>Email</p></span>
+                <span><p>Education</p></span>
+                <span><p>Mobile Number</p></span>
+                <span><p>Languages</p></span>
+              </div>
+            </div>
+            <!-- -------------------- RIGHT INFO BOX ------------------ -->
+            <div class="right-info">
+              <span><p>Karachi , Pakistan</p></span>
+              <span><p>abc@gmail.com</p></span>
+              <span><p>Intermediate , Karachi Board</p></span>
+              <span><p>1234567890</p></span>
+              <span><p>English , Urdu</p></span>
+            </div>
+          </div>
+          <!-- ----------------- SOCIAL ICONS DIV ----------------- -->
+          <div class="social-icons flex f-center">
+            <span class="flex f-center"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></span>
+            <span class="flex f-center"
+              ><i class="fa-brands fa-instagram"></i
+            ></span>
+            <span class="flex f-center"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></span>
+            <span class="flex f-center"
+              ><i class="fa-brands fa-twitter"></i
+            ></span>
+          </div>
+        </div>
+        <div class="form flex f-col">
+          <form onsubmit="sendmail(); reset(); return false; " class="flex f-col">
+            <input
+              type="text"
+              id="name"
+              placeholder="YOUR NAME"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="email"
+              placeholder="YOUR EMAIL"
+              id="email"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              placeholder="SUBJECT"
+              required
+              autocomplete="off"
+            />
+            <textarea
+              class="textarea"
+              id="textar"
+              rows="10"
+              cols="90"
+              required
+              autocomplete="off"
+              min="5"
+            ></textarea>
+            <div class="cv-btn flex btn-submit">
+              <button class="btn" type="submit">Contact Me</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- =============== DIV FOR MENU BARS ================== -->
+      <div class="control-div flex f-center f-col">
+        <div class="control-icons flex f-center house active" data-id="home">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="control-icons flex f-center user" data-id="about">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control-icons flex f-center briefcase" data-id="portfolio">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="control-icons flex f-center newspaper" data-id="blogs">
+          <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="control-icons flex f-center envelope" data-id="contact">
+          <i class="fa-solid fa-envelope-open"></i>
+        </div>
+      </div>
+      <!-- =============== THEME BUTTON FOR LIGHT AND DARK MODE ================== -->
+      <div class="theme-btn flex f-center" id="toggle-btn" onclick="toggle()">
+        <i class="fas fa-adjust"></i>
+      </div>
+    </main>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendmail() {
+        Email.send({
+          Host: "smtp.gmail.io",
+          Username: "ma0401431@gmail.com",
+          Password: "qbbmygpujesxmxxf",
+          To: "ma0401431@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New Contact Form Enquiry",
+          Body: "Name: " + document.getElementById("name").value
+              + "<br> Email: " + document.getElementById("email") + 
+              "<br> Query: " + document.getElementById("textar"),
+        }).then(message => alert("Message Sent Successfully"));
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
